@@ -1,0 +1,199 @@
+{
+  "builtAt": "2026-10-30T03-47-22-103Z",
+  "version": "0.1.0",
+  "runtime": "Node.js >=20 and a Web Audio capable browser",
+  "files": [
+    {
+      "path": "docs/ACCEPTANCE.md",
+      "sha256": "c29711b478d68ca6c14f3fdd0a791fae00a292da0854c461961ada0fc050ff30"
+    },
+    {
+      "path": "package.json",
+      "sha256": "c4c291bb7ca282ba0a22f0331b57401f7fe99d1c425faad0fe4333c4f0364788"
+    },
+    {
+      "path": "public/app.js",
+      "sha256": "7c1ebe69604471b3b8e03b468e7c84195f3ad3521217244e7d0bd2bd4d5680e3"
+    },
+    {
+      "path": "public/audio-settings.css",
+      "sha256": "08ed519a5a4a75b854547d15cb6727ff740c22a6826debafaac5ce715783cc78"
+    },
+    {
+      "path": "public/beatgrid.js",
+      "sha256": "f74096b041c68c4e0a26367efb6a515ef2ff993449e9e3d82e1b3da036262048"
+    },
+    {
+      "path": "public/crate-store.js",
+      "sha256": "991d8a33e96facf8a62ed3afb59ee553e896ab62f778a0435ad2a745cc73782e"
+    },
+    {
+      "path": "public/crates-ui.js",
+      "sha256": "b1d7c6f6f809c202c8474930fa115d45cc202867f1a2edcf8be2647695b248e0"
+    },
+    {
+      "path": "public/crates.css",
+      "sha256": "6e7f1992485c56b3fdff2b20460c8755c6573d625ed05d0042cd90cf473de45f"
+    },
+    {
+      "path": "public/dsp.js",
+      "sha256": "26457d9089d3c66bd817f06d79a3f5d69fd26d10c69566bfb62962d43ad7cc24"
+    },
+    {
+      "path": "public/effects.js",
+      "sha256": "d6dbe08f2ec2495abedb0d1b78818caae15026c7e2f177dcb21278e8707b87d8"
+    },
+    {
+      "path": "public/engine.js",
+      "sha256": "91b1cfb9dd943a555193c9836975ece9b3cca579590ad22ebb25f78d26a6bbd6"
+    },
+    {
+      "path": "public/fourdeck-qa.js",
+      "sha256": "409e7ca92ec66a19b0b96460ef2400a4f761db9f92efc96a91f3e47e497165ef"
+    },
+    {
+      "path": "public/fourdeck.css",
+      "sha256": "59e57e505dc7eb6142b56e2b1560ae1b33ba8e08c63e725771280fb1e786a9ac"
+    },
+    {
+      "path": "public/index.html",
+      "sha256": "3a93e4e4822e29807e67a390c46369c170b3a9f46d56d3c2a05a0b8b38e44a4b"
+    },
+    {
+      "path": "public/keylock-metrics.js",
+      "sha256": "f27281431507e01e9a99ef97d01a8e46c28ce8d3fdce1cd9e66ad3e5f0530ce9"
+    },
+    {
+      "path": "public/keylock-probe.html",
+      "sha256": "6bb8efe74557031df2df16bf9a2350a3f0b9cd841150fa9856e697851a197433"
+    },
+    {
+      "path": "public/keylock-probe.js",
+      "sha256": "738e547828fbf5e9c43744efdeea3580edf66939246eb2b70e2f722133f13486"
+    },
+    {
+      "path": "public/keylock-qa.js",
+      "sha256": "faa7cb21f1f6f62afeb5798bdfbf1ba49acda5a55eeb4b9e48fb90a384adbe40"
+    },
+    {
+      "path": "public/midi-connection.js",
+      "sha256": "fce8adec5fd45bdc3f70e95591729474bc1fe86bf475df664253c53295a56f8f"
+    },
+    {
+      "path": "public/midi-dialog.html",
+      "sha256": "f81f7a4ea0552d6169ca5fe84b9ab6349b440e057deac35e9417a0c51e8b16d7"
+    },
+    {
+      "path": "public/midi-qa.html",
+      "sha256": "01ac88c212bda28153af886ea227cfeace9b4f7c2383edbf27c476b36313f98a"
+    },
+    {
+      "path": "public/midi-qa.js",
+      "sha256": "12a54d0de073f8d27cbea03716b033225573360420c72d7bdd1eb9e168cb92bf"
+    },
+    {
+      "path": "public/midi-router.js",
+      "sha256": "2451005265132abffee8ca36aa8f58b1ed5710365182579ae792503fc88791f0"
+    },
+    {
+      "path": "public/midi-targets.js",
+      "sha256": "fc06061381f425ab7a5ec0215783e1b4506df8012549c2595837ccf673cd3864"
+    },
+    {
+      "path": "public/midi-ui.js",
+      "sha256": "65341002bba786a2556cac49abd6b19796c3e17137a8a0c9d04edda99c236180"
+    },
+    {
+      "path": "public/midi.css",
+      "sha256": "cb2edd9833707a0966f4aec91d231ff47137c658031598742a9705ee209fdbb5"
+    },
+    {
+      "path": "public/mixer-layout.js",
+      "sha256": "47ae4e4988b66fccba97836089f57f2e75a3c9ed33893cb481c0ae522582d453"
+    },
+    {
+      "path": "public/mixer-routing.js",
+      "sha256": "d65a99d1969c22cab854857d1135d2fa0a21be6313c49e8ba112e39c50073f19"
+    },
+    {
+      "path": "public/performance-qa.js",
+      "sha256": "6c94ebf282b7351d454070ba97581848003033dbd2fd39822b2d49d21c543b79"
+    },
+    {
+      "path": "public/performance.css",
+      "sha256": "e8c04eed36d0eb438768331547cf70c84a3894f93e17a11063b1ab90a0d8b4be"
+    },
+    {
+      "path": "public/pitch.js",
+      "sha256": "aa5a105c2ed91096c6c67d21a67982e119ed24ae9826e5cc48ad73fc356eba8b"
+    },
+    {
+      "path": "public/qa.css",
+      "sha256": "57edad2b132e84724765a95aeb466e359fc598ba4caca69b4321d1e1dbf25f96"
+    },
+    {
+      "path": "public/qa.html",
+      "sha256": "3c66143864165480a13c6bf83efeb00d2c56256a1732f2af76887b77adddd871"
+    },
+    {
+      "path": "public/qa.js",
+      "sha256": "e93d25e44ae936dd53c0532ef2b7f5c1ad58a0ef3b3729098337032b7770af43"
+    },
+    {
+      "path": "public/rekordbox-ui.js",
+      "sha256": "29b1790036c34c5ab8d6d666fd40b8f8cf61311356e215f0a4f8e8d321f738d5"
+    },
+    {
+      "path": "public/rekordbox-xml.js",
+      "sha256": "1196b014ceccb20ef96ed186cb061968155fa3fec64cd5d34585e9d3ca574ee2"
+    },
+    {
+      "path": "public/sampler-ui.js",
+      "sha256": "22645efb53f2902ae463d543c0ae65a3046396bc7332c906126bdf1c628640cf"
+    },
+    {
+      "path": "public/sampler.js",
+      "sha256": "5f6f4b2f9d0a64e7df459835dcfb9205ab9f9f37f70a8538b3d53a99e3f5b644"
+    },
+    {
+      "path": "public/style.css",
+      "sha256": "701cae093de82a576ce9a29d81c7fb9a76de5d3993056bf503fa23e3f6aec704"
+    },
+    {
+      "path": "public/vector.css",
+      "sha256": "4b74d2016b7b431ccd7ea97f234c98739d1b04db6d6f7b3c96fca2680eb5d1b2"
+    },
+    {
+      "path": "public/vendor/soundtouch-2.1.1/LICENSE",
+      "sha256": "753801acf995db0807e9dab615775310b1f74696e7776ee246bf9b31714cdaf9"
+    },
+    {
+      "path": "public/vendor/soundtouch-2.1.1/NOTICE.txt",
+      "sha256": "4d59d05cf3012f15e8cd58c8691b648b927c16c09548f8297404761af37aa0bb"
+    },
+    {
+      "path": "public/vendor/soundtouch-2.1.1/orbit-pitch-processor.js",
+      "sha256": "eb18334c16eef148ab37ec4165fef7fcbfc237f6625088d471b0a507b64f1ddf"
+    },
+    {
+      "path": "public/vendor/soundtouch-2.1.1/soundtouch-processor.js",
+      "sha256": "59635b112697ad403f7aebb46fc5386231d5db06877707afcec19f555b4d68ca"
+    },
+    {
+      "path": "public/vendor/soundtouch-2.1.1/soundtouch-processor.js.map",
+      "sha256": "13abcd195f593e6cc4c59e218f8987484248e72de639b681e302fda021c5115c"
+    },
+    {
+      "path": "README.md",
+      "sha256": "d81ee663f16201f09708d6078a5738917f94455b2ef2e4c6fbb5768a282696a1"
+    },
+    {
+      "path": "server.mjs",
+      "sha256": "2e7df17e783ab8a8607645c09290af02d384463b13ce4006a64d63b7b3786e70"
+    },
+    {
+      "path": "start.cmd",
+      "sha256": "8eca6326bc8d78e9016da7a9cca4f2513a774e9d2a63e65b4c328151729e4884"
+    }
+  ]
+}

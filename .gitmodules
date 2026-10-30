@@ -1,0 +1,12 @@
+[submodule "tools/ILSpy"]
+	path = tools/ILSpy
+	url = https://github.com/icsharpcode/ILSpy.git
+[submodule "tools/BAM"]
+	path = tools/BAM
+	url = https://github.com/nsacyber/BAM.git
+[submodule "tools/GRASSMARLIN"]
+	path = tools/GRASSMARLIN
+	url = https://github.com/nsacyber/GRASSMARLIN.git
+[submodule "tools/emissary"]
+	path = tools/emissary
+	url = https://github.com/NationalSecurityAgency/emissary.git

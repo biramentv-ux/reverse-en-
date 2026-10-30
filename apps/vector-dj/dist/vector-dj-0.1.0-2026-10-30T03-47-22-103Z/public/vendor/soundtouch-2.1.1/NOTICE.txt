@@ -1,0 +1,7 @@
+SoundTouchJS audio-worklet 2.1.1
+Copyright Olli Parviainen, Ryan Berdeen, Jakub Fiala, Steve Cutter Blades and contributors.
+License: Mozilla Public License 2.0. See LICENSE and notices in the processor source.
+Official source: https://github.com/cutterbl/SoundTouchJS
+Package: https://registry.npmjs.org/@soundtouchjs/audio-worklet/-/audio-worklet-2.1.1.tgz
+soundtouch-processor.js and its map are copied without modification.
+orbit-pitch-processor.js is an ORBIT modification: applies processorOptions.stretchParameters synchronously before the first block and uses the separate orbit-pitch-processor name. The complete modified readable JavaScript source is included in this file. Reproduction patch: scripts/vendor-audio.mjs.

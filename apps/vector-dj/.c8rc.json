@@ -1,0 +1,12 @@
+{
+  "all": true,
+  "include": ["public/**/*.js", "server.mjs", "scripts/**/*.mjs"],
+  "exclude": [
+    "public/*-qa.js", "public/qa.js", "public/keylock-probe.js", "public/keylock-metrics.js",
+    "public/vendor/soundtouch-2.1.1/soundtouch-processor.js"
+  ],
+  "reporter": ["text", "html", "json", "json-summary", "lcov"],
+  "reports-dir": "output/coverage",
+  "100": true,
+  "per-file": true
+}

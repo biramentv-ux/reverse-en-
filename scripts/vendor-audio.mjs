@@ -1,0 +1,18 @@
+import { copyFile, mkdir, readFile, writeFile } from 'node:fs/promises';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
+const root=path.dirname(path.dirname(fileURLToPath(import.meta.url)));
+const source=path.join(root,'node_modules/@soundtouchjs/audio-worklet');
+const destination=path.join(root,'public/vendor/soundtouch-2.1.1');
+const pkg=JSON.parse(await readFile(path.join(source,'package.json'),'utf8'));
+if(pkg.version!=='2.1.1')throw new Error('Unexpected SoundTouch version');
+await mkdir(destination,{recursive:true});
+for(const name of ['soundtouch-processor.js','soundtouch-processor.js.map'])await copyFile(path.join(source,'.dist',name),path.join(destination,name));
+const upstream=await readFile(path.join(source,'.dist/soundtouch-processor.js'),'utf8');
+const constructorEnd=/(\t+interpolationStrategy: SoundTouchProcessorBase\.resolveStrategy\(options\?\.processorOptions\?\.interpolationStrategy, "\[SoundTouchProcessor\]"\)\r?\n\t+\}\);)/g;
+if([...upstream.matchAll(constructorEnd)].length!==1)throw new Error('Upstream processor constructor changed');
+const patched=upstream.replace(constructorEnd,'$1\n\t\t// ORBIT: apply the initial profile synchronously, before the first render block.\n\t\tif (options?.processorOptions?.stretchParameters) this._pipe.setStretchParameters(options.processorOptions.stretchParameters);').replace('var PROCESSOR_NAME = "soundtouch-processor";','var PROCESSOR_NAME = "orbit-pitch-processor";').replace(/\/\/# sourceMappingURL=soundtouch-processor.js.map/g,'');
+await writeFile(path.join(destination,'orbit-pitch-processor.js'),'// ORBIT modified SoundTouchJS 2.1.1: synchronous initial stretch profile and separate processor name. MPL-2.0.\n'+patched);
+await copyFile(path.join(source,'LICENSE'),path.join(destination,'LICENSE'));
+await writeFile(path.join(destination,'NOTICE.txt'),'SoundTouchJS audio-worklet 2.1.1\nCopyright Olli Parviainen, Ryan Berdeen, Jakub Fiala, Steve Cutter Blades and contributors.\nLicense: Mozilla Public License 2.0. See LICENSE and notices in the processor source.\nOfficial source: https://github.com/cutterbl/SoundTouchJS\nPackage: https://registry.npmjs.org/@soundtouchjs/audio-worklet/-/audio-worklet-2.1.1.tgz\nsoundtouch-processor.js and its map are copied without modification.\norbit-pitch-processor.js is an ORBIT modification: applies processorOptions.stretchParameters synchronously before the first block and uses the separate orbit-pitch-processor name. The complete modified readable JavaScript source is included in this file. Reproduction patch: scripts/vendor-audio.mjs.\n');
+console.log('Vendored SoundTouchJS 2.1.1 processor, source map, license and notice.');

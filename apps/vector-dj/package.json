@@ -1,0 +1,24 @@
+{
+  "name": "vector-dj-studio",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Independent local DJ studio with Rekordbox XML library import",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node server.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "build": "node scripts/build.mjs",
+    "test:coverage": "c8 node --test tests/*.test.mjs",
+    "coverage:check": "c8 check-coverage --100 --per-file",
+    "compare:bytes": "node scripts/compare-artifacts.mjs"
+  },
+  "devDependencies": {
+    "@xmldom/xmldom": "0.9.12",
+    "c8": "12.0.0",
+    "fake-indexeddb": "6.2.7",
+    "jsdom": "26.1.0"
+  }
+}

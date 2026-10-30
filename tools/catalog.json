@@ -1,0 +1,38 @@
+[
+  {
+    "name": "ILSpy",
+    "path": "tools/ILSpy",
+    "source": "https://github.com/icsharpcode/ILSpy.git",
+    "commit": "40a7d46de5a9d2eb05ff5531e3d64e8172a74028",
+    "sourceDownloaded": true,
+    "buildVerified": false,
+    "workingTreeClean": true
+  },
+  {
+    "name": "BAM",
+    "path": "tools/BAM",
+    "source": "https://github.com/nsacyber/BAM.git",
+    "commit": "1eda2407211586b755eeae6e1f9006ff06f899ec",
+    "sourceDownloaded": true,
+    "buildVerified": false,
+    "workingTreeClean": true
+  },
+  {
+    "name": "GRASSMARLIN",
+    "path": "tools/GRASSMARLIN",
+    "source": "https://github.com/nsacyber/GRASSMARLIN.git",
+    "commit": "2b37b7b5f0a4739932d6bff7eae2b8ac5758ba7b",
+    "sourceDownloaded": true,
+    "buildVerified": false,
+    "workingTreeClean": true
+  },
+  {
+    "name": "emissary",
+    "path": "tools/emissary",
+    "source": "https://github.com/NationalSecurityAgency/emissary.git",
+    "commit": "b5392338df96603d5408fae4d9df6ac3fab9b7f9",
+    "sourceDownloaded": true,
+    "buildVerified": false,
+    "workingTreeClean": true
+  }
+]

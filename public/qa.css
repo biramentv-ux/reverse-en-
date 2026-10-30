@@ -1,0 +1,1 @@
+main{max-width:1000px;padding:45px}#results{padding:0;list-style:none}#results li{padding:16px;margin:10px 0;background:#1b222b;border:1px solid #39434f;border-radius:6px}#results li.pass{border-left:3px solid #a9e755}#results li.fail{border-left:3px solid #ed7972}#results pre{font:12px Consolas,monospace;white-space:pre-wrap;color:#acb9cc}main>a{color:#a9e755}
